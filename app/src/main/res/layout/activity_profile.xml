@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+    
+    <TextView
+        android:id="@+id/profileText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/usiaa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileText"
+        android:layout_marginTop="10dp"
+        android:hint="masukkan usia" />
+
+    <EditText
+        android:id="@+id/beraat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usiaa"
+        android:layout_marginTop="10dp"
+        android:hint="masukkan berat" />
+
+    <EditText
+        android:id="@+id/kelaamin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/beraat"
+        android:layout_marginTop="10dp"
+        android:hint="jenis kelamin" />
+
+    <Button
+        android:id="@+id/logOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="LogOut"
+        android:layout_below="@id/kelaamin"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="100dp"
+        android:onClick="signOut"/>
+
+    <Button
+        android:id="@+id/munculkanData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Munculkan Data"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="100dp"
+        android:layout_below="@id/logOut"
+        android:onClick="displayData"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/munculkanData"
+        android:text="Tambah Rule"
+        android:onClick="displayFormrule"/>
+
+
+</RelativeLayout>
