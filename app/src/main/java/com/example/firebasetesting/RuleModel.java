@@ -12,6 +12,9 @@ public class RuleModel {
         this.energi = energi;
     }
 
+    public RuleModel()
+    {}
+
     public String getJenis_kelamin() {
         return jenis_kelamin;
     }

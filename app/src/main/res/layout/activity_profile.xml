@@ -48,6 +48,28 @@
         android:textColor="@android:color/white"
         android:layout_marginTop="100dp"
         android:onClick="signOut"/>
+    
+    <TextView
+        android:id="@+id/tv_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logOut"/>
+    <TextView
+        android:id="@+id/tv_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logOut"
+        android:layout_toRightOf="@id/tv_user"
+        android:layout_marginLeft="20dp"/>
+
+
+    <Button
+        android:id="@+id/btn_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Dialog"
+        android:layout_below="@id/tv_pass"
+        android:layout_marginTop="20dp"/>
 
     <Button
         android:id="@+id/munculkanData"
@@ -58,7 +80,7 @@
         android:background="@color/colorPrimary"
         android:textColor="@android:color/white"
         android:layout_marginTop="100dp"
-        android:layout_below="@id/logOut"
+        android:layout_below="@id/tv_pass"
         android:onClick="displayData"/>
 
     <Button
@@ -66,7 +88,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/munculkanData"
         android:text="Tambah Rule"
-        android:onClick="displayFormrule"/>
+        android:onClick="displayData"/>
 
 
 </RelativeLayout>
